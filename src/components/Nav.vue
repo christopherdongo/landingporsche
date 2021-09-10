@@ -8,7 +8,7 @@
             <p v-for="(option,index) in menu" :key="index" @click="openLink(option.link)" class="cursor-pointer text-xs font-bold ">{{option.title}}</p>
         </div>
         </div>
-        <div class="block md:hidden fixed right-8 top-8 cursor-pointer">
+        <div class="block md:hidden pr-10 right-8 top-8 cursor-pointer">
             <img :src="MenuLogo" alt="Display menu" class="w-8"/>
         </div>
     </div>
