@@ -18,20 +18,10 @@
 </template>
 
 <script>
+import GeneralMixin from '../mixins/GeneralMixin';
 
 export default {
-
-props:{
-    content: {
-        default:()=> {},
-        type: Object,
-        required: true,
-    }
-},
-setup(props){
-    console.log(props.content)
-}
-
+ mixins:[GeneralMixin]
 }
 
 

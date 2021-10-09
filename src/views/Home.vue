@@ -1,14 +1,14 @@
 <template>
-    <div>
         <Nav />
         <MainHeader />
         <Presentation v-for="presentation in presentations" :key="presentation" :content="presentation" class="mb-16"/>
         <Stats />
-    </div>
+        <Tabs />
+        <Footer />
 </template>
 
 <script>
-import {Nav, MainHeader,Presentation,Stats} from '../components';
+import {Nav, MainHeader,Presentation,Stats,Tabs,Footer} from '../components';
 import {reactive, toRefs} from 'vue';
 import PorscheCockpit from '../assets/porsche-cockpit.png';
 import PorscheMotorsG5 from '../assets/g-motor5.jpeg';
@@ -18,7 +18,9 @@ export default {
      Nav, 
      MainHeader,
      Presentation,
-     Stats
+     Stats,
+     Tabs,
+     Footer
     },
     setup(){
         let data= reactive({

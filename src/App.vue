@@ -1,7 +1,5 @@
 <template>
-  <div class="Nav container mx-auto">
    <Home />
-  </div>
 </template>
 
 <script setup>

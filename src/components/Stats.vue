@@ -1,11 +1,9 @@
 <template>
-    <div class="Stats bg-cover bg-no-repeat bg-bottom relative" :style="`background-image:url(${Porsche2020}); height:450px;`">
-        <div class="w-full h-full bg-customBlue opacity-75 absolute z-0"  />
-        <div class="Stats-Components z-50 relative">
-         <p class="text-white">{{cards}}</p>
-         <StatsCard />
+    <div class="Stats bg-cover bg-no-repeat bg-bottom relative lg:pt-32 py-8" :style="`background-image:url(${Porsche2020});min-height: 300px; margin-bottom: 300px; background-position: center bottom -6rem;`">
+        <div class="w-full h-full bg-customBlue opacity-75 absolute z-0 top-0 left-0"  />
+        <div class="Stats-Components flex flex-col lg:flex-row items-center justify-between z-50 gap-y-5 lg:gap-y-0 relative lg:absolute w-full p-8">
+         <StatsCard v-for="card,index in cards" :key="index" :content="card" />
         </div>     
-        
     </div>
 </template>
 
@@ -58,8 +56,11 @@ export default {
 
 }
 
-
-
 </script>
 
+<style>
+.Stats{
+
+}
+</style>
 
