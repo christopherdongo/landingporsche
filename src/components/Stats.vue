@@ -29,21 +29,25 @@ export default {
     imgSrc:Plug,
     title:'Range',
     description:'301 miles<br>(25.4 - 24.4 kwh/100 miles)',
+    animated:'fade-right'
 },
 {
     imgSrc:Speed,
     title:'Speed',
     description:'5.4s<br>0 - 100km',
+    animated:'fade-up',
 },
 {
     imgSrc:Size,
     title:'Size',
     description:'L: 4.963 mm<br>W: 1,966 mm<br>H: 1,395 mm',
+    animated:'fade-down'
 },
 {
     imgSrc:Weight,
     title:'Weight',
     description:'2,050 kg',
+    animated:'fade-left'
 }
         ]
     })
